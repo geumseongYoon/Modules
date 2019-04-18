@@ -7,6 +7,6 @@ if euid != 0:
     args = ['sudo', sys.executable] + sys.argv + [os.environ]
     # the next line replaces the currently-running process with the sudo
     # os.execlpe('sudo', *args)
-    # sys.exit(1)
+    # sys.exit(1)   # terminate python file
 else:
     print('Running. Your euid is', euid)
